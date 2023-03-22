@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * main - Prints natural numbers below 1024 that are
  * multiplies of 3 or 5
@@ -13,6 +14,6 @@ int main(void)
 		if ((a % 3) == 0 || (a % 5) == 0)
 			b += a;
 	}
-	printf("%d\n", b);
+	_putchar("%d\n", b);
 	return (0);
 }
