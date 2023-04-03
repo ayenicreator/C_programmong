@@ -1,4 +1,4 @@
-#include "MAIN_H"
+#include "main.h"
 /**
  * *_memset- memory set function
  * @s: starting address of memory to be filled
