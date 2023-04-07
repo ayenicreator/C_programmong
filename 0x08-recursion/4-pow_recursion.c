@@ -1,5 +1,3 @@
-4-POW_RECURSION.C CODE
-
 
 #include "main.h"
 
