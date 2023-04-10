@@ -6,5 +6,6 @@
  */
 int _islower(int c)
 {
+	_putchar('\n');
 	return (c >= 'a' && c <= 'z');
 }
