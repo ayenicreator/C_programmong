@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
  *main- Entry Point
@@ -6,6 +5,6 @@
  */
 int main(void)
 {
-	printf("%s\n", __FILE__;
+	printf("%s\n", __FILE__);
 	return (0);
 }
