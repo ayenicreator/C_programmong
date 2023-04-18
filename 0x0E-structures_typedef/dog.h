@@ -8,5 +8,5 @@ struct dog
 	float age;
 	char *owner;
 };
-typedef STRUCT_DOG;
+typedef STRUCT_DOG
 #endif
