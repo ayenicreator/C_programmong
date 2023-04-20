@@ -6,7 +6,7 @@
  * @n: The number of integers passed to the function.
  * @...: A variable number of numbers to be printed.
  */
-void print_numbers(const char *separator, const unsigned int n, ...);
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list numbers;
 	unsigned int dex;
@@ -15,10 +15,10 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 
 	for (dex = 0; dex < n; dex++)
 	{
-		printf("%d", va_arg(numbers, int);
+		printf("%d", va_arg(numbers, int));
 
-			if (dex != (n - 1) && seperator != NULL)
-				printf("%s", seperator);
+			if (dex != (n - 1) && separator != NULL)
+				printf("%s", separator);
 	}
 
 	printf("\n");
