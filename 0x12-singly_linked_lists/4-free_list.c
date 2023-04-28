@@ -1,12 +1,8 @@
 #include <stdlib.h>
 #include "lists.h"
-/*
- * free_list - frees a linked list
- * @head: pointer to the head of the linked list
- *
- * This function frees each node in the linked list, starting from the head.
- * It frees the memory used by the string data of each node, and then frees the
- * memory used by the node itself.
+/**
+ * free_list - this function frees a linked list
+ * @head: list_t list to be freed
  */
 void free_list(list_t *head)
 {
