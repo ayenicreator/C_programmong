@@ -11,19 +11,19 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int num = 0;
-	int j = 0;
+	int k = 0;
 
 	if (b == NULL)
 	{
 		return (0);
 	}
 
-	for (j = 0; b[j] != '\0'; j++)
+	for (k = 0; b[k] != '\0'; k++)
 	{
-		if (b[j] == '0' || b[j] == '1')
+		if (b[k] == '0' || b[k] == '1')
 		{
 			num <<= 1;
-			if (b[j] == '1')
+			if (b[k] == '1')
 			{
 				num = num + 1;
 			}
