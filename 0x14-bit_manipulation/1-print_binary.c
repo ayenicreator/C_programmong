@@ -2,30 +2,14 @@
 
 /**
  * print_binary - prints the binary representation of a number.
- * @n: number to print.
+ * @n: integer num to be printed.
+ *
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int ab = 1UL << (sizeof(unsigned long int) * 8 - 1);
-	int curr = 0;
-
-	if (n == 0)
-	{
-		_putchar('0');
-		return;
-	}
-
-	while (ab != 0)
-	{
-		if ((n & ab) !=0)
-		{
-			_putchar('1');
-			curr = 1;
-		}
-		else if (curr == 1)
-		{
-			_putchar('0');
-		}
-		ab >>= 1;
-	}
+        if (n > 1)
+        {
+                print_binary(n >> 1);
+        }
+        _putchar((n & 1) + '0');
 }
